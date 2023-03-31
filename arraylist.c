@@ -28,9 +28,7 @@ void append(ArrayList * l, void * data){
     l->data[l->size] = data;
     l->size++;
   }
-  
-  if(l->size == (l->capacity) - 1){
-  }
+  l->capacity *= 2;
 }
 
 void push(ArrayList * l, void * data, int i){
