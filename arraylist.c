@@ -59,7 +59,7 @@ void* get(ArrayList * l, int i){
         return l->data[h];
     }
   }
-  h = i - 1;
+  //h = i - 1;
   return l->data[i];
 }
 
