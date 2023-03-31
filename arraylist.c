@@ -48,7 +48,7 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
   if(i < 0)
-    get(l, i);
+    return get(l, i);
   else{
     for(int h = 0; h < l->size; h++){
         l->data[h - 1] = l->data[h];
@@ -79,5 +79,5 @@ int get_size(ArrayList * l){
 void clean(ArrayList * l){
   l->capacity = 2;
   l->size = 0;
-  l->data = malloc(sizeof(l->data) * 2);
+  l->data = malloc(sizeof(2));
 }
