@@ -50,11 +50,10 @@ void* pop(ArrayList * l, int i){
   if(i >= l->size) return NULL;
   if(i < 0)
     get(l, i);
-  else {
-    for(int h = 0; h < l->size; h++){
-        l->data[h - 1] = l->data[h];
-    }
+  for(int h = 0; h < l->size; h++){
+    l->data[h - 1] = l->data[h];
   }
+  
   if(l->size == 0) return l->data[i];
   l->data[l->size] = NULL;
   l->size--;
