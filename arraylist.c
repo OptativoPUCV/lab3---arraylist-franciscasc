@@ -57,6 +57,7 @@ void* get(ArrayList * l, int i){
     //for(int h = ){
       
     //}
+  return NULL;
 }
 
 int get_size(ArrayList * l){
