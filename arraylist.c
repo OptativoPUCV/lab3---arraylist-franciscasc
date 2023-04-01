@@ -83,5 +83,5 @@ void clean(ArrayList * l){
   l->capacity = 2;
   l->size = 0;
   free(l->data);
-  //l->data = malloc(sizeof(ArrayList));
+  l->data = malloc(sizeof(ArrayList));
 }
